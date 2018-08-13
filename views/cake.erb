@@ -1,0 +1,17 @@
+<h2>Cakes</h2>
+<% cakes = [['https://static1.squarespace.com/static/56ccc0ee62cd94770227aed9/575882a31d07c0840e4e4c5b/58d55e6546c3c42ec072cb77/1490378385940/chocolate-salted-caramel.jpg?format=300w','chocolate cake','this is a chocolate cake',35],['https://i.pinimg.com/originals/af/2b/12/af2b12e64ff5b400e3670ea6ce6e66d9.jpg','Red velvet cake','this is a red velvet cake',50],['http://www.edgevillebuzz.com/wp-content/uploads/rainbow-cake-1-300x300.jpg','Rainbow Cake','this is a rainbow cake',40]]%>
+<div class="container">
+<% cakes.each do |cake| %>
+<% img = cake[0] %>
+<% name = cake[1] %>
+<% description = cake[2] %>
+<% price = cake[3] %>
+<% newCake = Item.new(img,name,description,price) %>
+<div class="item">
+  <img src="<%= img %>" alt="">
+  <h3><%= name %></h3>
+  <p><%= description %></p>
+  <h4>$<%= price %></h4>
+</div>
+<% end %>
+</div>
