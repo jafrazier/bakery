@@ -1,8 +1,8 @@
 <h2>COOKIES</h2>
-<% cookies = [['https://amyshealthybaking.com/wp-content/uploads/2017/01/mini-chocolate-chip-peanut-butter-cookies_a-LL-300x300.jpg','chocolate chip','this is a chocolate chip cookie', 9],['https://i1.wp.com/www.livewellbakeoften.com/wp-content/uploads/2017/01/Soft-and-Chewy-Oatmeal-Raisin-Cookies-4-300x300-1.jpg?fit=300%2C300&ssl=1', 'Oatmeal raisin', 'this is an Oatmeal raisin cookie', 10],['https://www.thesugarpixie.net/wp-content/uploads/2010/11/pb_sriracha_cookies-300x300.jpg', 'peanut butter', 'this is a peanut butter cookie', 10]]%>
+<% @cookies = [['https://amyshealthybaking.com/wp-content/uploads/2017/01/mini-chocolate-chip-peanut-butter-cookies_a-LL-300x300.jpg','chocolate chip','this is a chocolate chip cookie', 9],['https://i1.wp.com/www.livewellbakeoften.com/wp-content/uploads/2017/01/Soft-and-Chewy-Oatmeal-Raisin-Cookies-4-300x300-1.jpg?fit=300%2C300&ssl=1', 'Oatmeal raisin', 'this is an Oatmeal raisin cookie', 10],['https://www.thesugarpixie.net/wp-content/uploads/2010/11/pb_sriracha_cookies-300x300.jpg', 'peanut butter', 'this is a peanut butter cookie', 10]]%>
 
 <div class="container">
-<% cookies.each do |cookie| %>
+<% @cookies.each do |cookie| %>
 <% img = cookie[0] %>
 <% name = cookie[1] %>
 <% description = cookie[2] %>

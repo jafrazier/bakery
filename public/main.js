@@ -1,8 +1,11 @@
-console.log('woking');
 $('.nav a').fadeOut(1500)
 $('header').hover (function() {
-  $('.nav a').fadeToggle(700)
+  $('.nav a').fadeToggle(500)
 });
-
 $('.container').hide()
-$('.container').fadeIn(2000 )
+$('.container').fadeIn(500)
+
+$('.main-carousel').flickity({
+  cellAlign: 'left',
+  contain: true
+});

@@ -1,7 +1,5 @@
 require 'sinatra'
 require 'httparty'
-
-
 class Item
   attr_accessor :img, :name, :description, :price
   def initialize(img,name,description,price)
