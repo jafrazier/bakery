@@ -27,6 +27,9 @@ get '/muffin' do
   erb :muffin
 end
 
-get '/signup' do
-  erb :signup
+get '/events' do
+  request = HTTParty.get("https://www.eventbriteapi.com/v3/events/search/?q=baking&sort_by=best&location.address=new+york+city&token=#{ENV['API_TOKEN']}")
+  req = JSON.parse(request.body)
+  @event = req['events']
+  erb :events
 end

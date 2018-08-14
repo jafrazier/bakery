@@ -1,0 +1,10 @@
+<h2>EVENTS</h2>
+<div class="container eventcon">
+<% @event.each do |event| %>
+  <div class="item events">
+    <h3> <a href="<%= event['url'] %>" target="_blank"><%= event['name']['text'] %></a></h3>
+    <img src="<%= event['logo']['url'] %>" alt="">
+    <p><%= event['description']['text'] %></p>
+  </div>
+<% end %>
+</div>

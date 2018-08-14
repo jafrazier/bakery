@@ -2,45 +2,73 @@
   margin: 0;
   padding: 0;
 }
+
 html {
   background: red;
 }
+
 body {
   width: 100vw;
   height: 100vh;
-  overflow: scroll;
   font-family: sans-serif;
-  background: url('http://savorthesweetness.com/media/1001/a.jpg') ;
+  background: url('/bgp.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: fixed;
+  overflow: scroll;
 }
 
-header{
-height: 5em;
+header {
+  /* height: 5em; */
 }
-h1.title  {
+
+h1.title {
   font-size: 4em;
   /* font-family: 'Cookie', cursive; */
   font-family: 'Homemade Apple', cursive;
   color: rgb(229, 230, 222);
-  text-shadow:2px 2px 2px rgba(0,0,0,.9);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .9);
   font-weight: 100;
   position: fixed;
   text-decoration: underline;
   margin-left: .25em;
 }
+.title2 {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 1.75em;
+  position: fixed;
+  color: rgb(229, 230, 222);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .9);
+  margin-top: 2.8em;
+  margin-left: 1.15em;
+}
+
 h2 {
   font-size: 3em;
   text-align: center;
   margin: .50em 0 .2em 0;
   color: rgb(229, 230, 222);
-  text-shadow:2px 2px 2px rgba(0,0,0,.9);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .9);
 }
+
 h3 {
   font-size: 1.5em;
   margin: .5em 0;
+}
+
+h3 a {
+  text-decoration: none;
+  font-size: 1em;
+  color: rgb(229, 230, 222);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .9);
+}
+h3 a:hover {
+  color: rgba(255, 255, 255, .7);
+  font-size: 1.1em;
+}
+.events p {
+  font-size: 1.2em;
 }
 p {
   margin: .5em 0;
@@ -52,25 +80,51 @@ ul {
   text-align: center;
   margin-left: 1.5em;
 }
+
 ul li {
   list-style-type: none;
   display: inline-block;
   width: 12em;
   padding-top: 3.5em;
-
 }
+
 ul li a {
   text-decoration: none;
   font-size: 1.7em;
   color: rgb(229, 230, 222);
-  text-shadow:2px 2px 2px rgba(0,0,0,.9);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .9);
+}
+
+ul li a:hover {
+  color: rgba(255, 255, 255, .5);
+  font-size: 1.85em;
+  border-bottom: rgba(255, 255, 255, .5) .1em solid;
+}
+.homeContainer{
+  border-top: rgb(229, 230, 222) .2em solid;
+  width: 60vw;
+  height: 75vh;
+  margin: 0 auto;
+  margin-top: 3em;
+  text-align: center;
+}
+.homeContainer p {
+  font-size: 1.5em;
+  color: rgb(229, 230, 222);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .9);
+  text-align: left;
+
 
 }
-ul li a:hover {
-  color: rgba(255, 255, 255,.5);
-  font-size: 1.85em;
-  border-bottom: rgba(255, 255, 255,.5) .1em solid;
-
+img.julia {
+  width: 250px;
+  height: 250px;
+  border: rgb(229, 230, 222) .2em solid;
+  border-radius: 100px;
+  margin-top: 1em;
+}
+.landing {
+  font-family: 'Homemade Apple', cursive;
 }
 .container {
   display: grid;
@@ -81,11 +135,28 @@ ul li a:hover {
   text-align: center;
   border-top: rgb(229, 230, 222) .2em solid;
   padding-top: 3em;
+  overflow: scroll;
+  padding: 2em;
+  box-sizing: border-box;
 
 }
-
+.eventcon {
+  grid-gap: 1.5em;
+}
 .item {
+  overflow: scroll;
+  height: 60vh;
+  padding: 1.2em;
+  color: rgb(229, 230, 222);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .9);
 
+}
+.item p {
+  font-size: 1.5em;
+}
+
+.events {
+  border-bottom: rgb(229, 230, 222) .15em solid;
 }
 
 footer {
@@ -95,28 +166,36 @@ footer {
   bottom: 0;
   display: inline-block;
   color: rgb(229, 230, 222);
-  text-shadow:2px 2px 2px rgba(0,0,0,.9);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .9);
 }
-small {
+
+.copy {
   width: 40%;
   float: left;
   padding: 1em;
 }
-.social{
+
+.social {
   width: 50%;
   float: right;
   text-align: right;
   font-size: 2em;
   margin-right: 1em;
 }
+
 .social a {
   margin-left: .75em;
   color: rgb(229, 230, 222);
-  text-shadow:2px 2px 2px rgba(0,0,0,.9);
-
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .9);
 }
 
 .social a:hover {
-  color: rgba(255,255,255,.5);
+  color: rgba(255, 255, 255, .5);
   font-size: 1.4em;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, .4);
 }

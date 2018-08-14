@@ -1,19 +1,8 @@
-cookies = [['one','good','the best in the world', 9],['two', 'bad', 'the worst in the world', 10]]
-class Item
-  attr_accessor :img, :name, :description, :price
-  def initialize(img,name,description,price)
-    @img = img
-    @name = name
-    @description = description
-    @price = price
-  end
-end
+require 'httparty'
 
-cookies.each do |cookie|
-img = cookie[0]
-name = cookie[1]
-description = cookie[2]
-price = cookie[3]
-cook = Item.new(img,name,description,price)
-p cook
+request = HTTParty.get("https://www.eventbriteapi.com/v3/events/search/?q=backing&token=FVT4PYIK2GIOVPU4Z2GN")
+req = JSON.parse(request.body)
+@event = req['events']
+@event.each do |events|
+ puts events['logo']['url']
 end

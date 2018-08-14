@@ -1,4 +1,8 @@
 console.log('woking');
-$('.title').click (function() {
-  $('.nav').slideToggle(1000)
+$('.nav a').fadeOut(1500)
+$('header').hover (function() {
+  $('.nav a').fadeToggle(700)
 });
+
+$('.container').hide()
+$('.container').fadeIn(2000 )
