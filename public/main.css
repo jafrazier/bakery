@@ -102,10 +102,10 @@ ul li a:hover {
 }
 .homeContainer{
   border-top: rgb(229, 230, 222) .2em solid;
-  width: 60vw;
-  height: 80vh;
+  width: 100vw;
+  height: 95vh;
   margin: 0 auto;
-  margin-top: 3em;
+  margin-top: 4em;
   text-align: center;
   overflow: scroll;
 }
@@ -126,7 +126,11 @@ img.julia {
   font-family: 'Homemade Apple', cursive;
 }
 .welcome {
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
   margin-bottom: 13em;
+
 }
 hr{
   border: rgb(229, 230, 222) .12em solid;
@@ -200,27 +204,37 @@ footer {
 }
 
 img {
-  width: 300px;
-  height: 300px;
+  width: 15em;
+  height: 15em;
   box-shadow: 5px 5px 2px rgba(0, 0, 0,.4);
+}
+.hotItems {
+  width: 95.5%;
+  height: 90vh;
+  background: white;
+  padding: 1em;
+  background: url('/wood.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 2em;
 }
 .main-carousel {
   margin: 0 auto;
-  width: 70%;
-  height: 80%;
-  background: rgba(0,0,0,.4);
-  padding: 3.3em;
+  width: 50%;
+  height: 70%;
+  padding: 3em;
+
 }
 .main-carousel img {
-  width: 60%;
+  width: 50%;
   height: auto;
 }
-.carousel-cell {
-  color: rgb(229, 230, 222);
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, .9);
-}
-.carousel-cell p {
+
+.carousel-cell p, .hotItems h2{
   text-align: center;
+  color: rgba(0, 0, 0, .9);
+  text-shadow: 2px 2px 2px rgba(255, 255, 255,.7);
 }
 .flickity-slider {
   position: absolute;
@@ -230,35 +244,33 @@ img {
 
 .carousel-cell {
   width: 100%;
-  height:100vh;
+  height: 100vh;
   margin-right: 10px;
+  color: rgba(0, 0, 0, .9);
+  text-shadow: 2px 2px 2px rgba(255, 255, 255,.7);
 }
 
 .flickity-button {
-  background: #333;
+  background: rgba(0,0,0,.5);
 }
 .flickity-button:hover {
-  background: #F90;
+  background: rgba(229, 230, 222,.9);
 }
 
 .flickity-prev-next-button {
-  width: 30px;
-  height: 30px;
-  border-radius: 5px;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
 }
 /* icon color */
 .flickity-button-icon {
-  fill: white;
-}
-/* position outside */
-.flickity-prev-next-button.previous {
-  left: -40px;
-}
-.flickity-prev-next-button.next {
-  right: -40px;
+  fill: black;
 }
 .flickity-page-dots {
   bottom: 25px;
-  width: 85%;
+  width: 89%;
+
+}
+.dot {
 
 }
