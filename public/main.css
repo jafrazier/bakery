@@ -10,13 +10,14 @@ html {
 body {
   width: 100vw;
   height: 100vh;
-  font-family: sans-serif;
+  font-family: 'Jua', sans-serif;
   background: url('/bgp.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: fixed;
   overflow: scroll;
+  font-weight: 100;
 }
 
 header {

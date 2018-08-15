@@ -1,4 +1,8 @@
-$('.nav a').fadeOut(1500)
+$('div').scroll(function(){
+    $('.nav a').fadeOut(1000)
+});
+
+// $('.nav a').fadeOut(1500)
 $('header').hover (function() {
   $('.nav a').fadeToggle(500)
 });
